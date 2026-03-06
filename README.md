@@ -147,8 +147,8 @@ It is designed to be **simple, fast, and easy to use**, making it ideal for **sm
 ### Backend
 
 * Java
-* Servlet
-* JSP
+* Spring Boot
+* JPA
 * JDBC
 
 ### Frontend
