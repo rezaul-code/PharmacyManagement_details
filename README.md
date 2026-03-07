@@ -2,9 +2,9 @@
 
 ## 📌 Project Overview
 
-The **Pharmacy Management System** is a modern digital solution designed to streamline pharmacy operations and replace traditional manual registers.
+The **Pharmacy Management System** is a modern digital platform designed to simplify pharmacy operations and replace traditional manual registers.
 
-The system helps pharmacies efficiently manage:
+It helps pharmacies efficiently manage:
 
 * Medicine inventory
 * Billing and invoice generation
@@ -12,11 +12,13 @@ The system helps pharmacies efficiently manage:
 * Staff management
 * Pharmacy configuration
 
-It is built using **Java, Spring Boot, HTML, CSS, JavaScript, and MySQL**, following a **clean MVC architecture** to ensure scalability and maintainability.
+The system is built using **Java, Spring Boot, HTML, CSS, JavaScript, and MySQL**, following a **clean MVC architecture** that ensures scalability and maintainability.
 
-This repository serves as a **public showcase of the project features and architecture**.
+⚠️ **Important Notice**
 
-⚠️ The **complete source code repository is private** to protect the intellectual property and implementation details.
+This repository is a **public showcase repository** created to demonstrate the system features and workflow.
+
+The **actual source code repository is private** to protect the intellectual property and original implementation.
 
 If you are interested in using or purchasing this system, please contact the author.
 
@@ -24,48 +26,73 @@ If you are interested in using or purchasing this system, please contact the aut
 
 # 🖥️ Application Interface
 
-Below are some screenshots of the system interface to demonstrate the main modules and workflow.
-
-### Dashboard
-
-<img src="screenshots/dashboard.png" width="700">
-
-The dashboard provides a quick overview of pharmacy activity including:
-
-* Total medicines in inventory
-* Low stock alerts
-* Recent billing activity
-* Pharmacy statistics
-
-It acts as the **central control panel for pharmacy operations**.
+Below are some screenshots demonstrating the main modules and workflow of the system.
 
 ---
 
-### Medicine Inventory
+## 🏠 Home Page
 
-<img src="screenshots/inventory.png" width="700">
+<img src="screenshots/home-page.png" width="650">
 
-The inventory module displays all medicines stored in the system.
-
-Each record contains:
-
-* Medicine name
-* Medicine type
-* Manufacturer
-* Batch number
-* Expiry date
-* Price and GST
-* Stock quantity
-
-This module allows pharmacy staff to **monitor stock availability and manage medicines efficiently**.
+The home page provides an introduction to the pharmacy system and allows users to navigate to login or registration pages.
 
 ---
 
-### Add Medicine
+## 🔐 Login System
+
+<img src="screenshots/login.png" width="450">
+
+The login system allows registered users to securely access the pharmacy system.
+
+Features include:
+
+* Secure authentication
+* Session management
+* Role-based access
+
+---
+
+## 📝 User Registration
+
+<img src="screenshots/register.png" width="450">
+
+New pharmacy users can create an account using the registration interface.
+
+Once registered, users can log in and manage their pharmacy operations.
+
+---
+
+## 📊 Dashboard (Admin)
+
+<img src="screenshots/dashboard-admin.png" width="700">
+
+The admin dashboard provides a complete overview of the pharmacy system including:
+
+* Total medicines
+* Inventory overview
+* Billing statistics
+* System management tools
+
+---
+
+## 💊 Dashboard (Pharmacist)
+
+<img src="screenshots/dashboard-pharmacist.png" width="700">
+
+The pharmacist dashboard focuses on operational tasks such as:
+
+* Medicine inventory
+* Billing system
+* Stock monitoring
+* Daily sales activities
+
+---
+
+## 💊 Add Medicine
 
 <img src="screenshots/add-medicine.png" width="700">
 
-Pharmacy staff can add new medicines with detailed information such as:
+Pharmacy staff can add new medicines with details such as:
 
 * Manufacturer
 * Batch number
@@ -74,41 +101,69 @@ Pharmacy staff can add new medicines with detailed information such as:
 * GST percentage
 * Available stock
 
-This ensures **accurate tracking of medicines inside the pharmacy**.
+This ensures accurate medicine tracking.
 
 ---
 
-### Smart Billing System
+## 📦 Medicine Inventory
+
+<img src="screenshots/inventory.png" width="700">
+
+The inventory page shows all medicines stored in the pharmacy database.
+
+Each medicine record includes:
+
+* Medicine name
+* Manufacturer
+* Batch number
+* Expiry date
+* Price
+* GST
+* Available stock
+
+This helps staff monitor stock levels and medicine availability.
+
+---
+
+## 🧾 Billing System
 
 <img src="screenshots/new-bill.png" width="700">
 
-The billing module enables quick and accurate billing for customers.
+The billing module allows staff to quickly generate medicine bills.
 
-Key capabilities include:
+Features include:
 
-* Fast medicine search using autocomplete
-* Adding multiple medicines in a single bill
+* Autocomplete medicine search
+* Multiple medicines per bill
+* Quantity-based billing
 * Automatic GST calculation
-* Quantity-based pricing
-* Real-time bill total calculation
+* Real-time bill total
 
-This helps reduce manual work and speeds up the checkout process.
+This helps pharmacies generate bills quickly and accurately.
 
 ---
 
-### Invoice Generation
+## 🧾 Invoice Generation
 
 <img src="screenshots/invoice.png" width="700">
 
-Once billing is completed, the system generates a **clean printable invoice** containing:
+Once a bill is generated, the system creates a clean invoice containing:
 
-* Pharmacy details
-* Patient information
+* Pharmacy information
+* Patient details
 * Purchased medicines
 * GST breakdown
 * Grand total
 
-Invoices can be printed or stored for future reference.
+---
+
+## 🖨️ Printable Invoice
+
+<img src="screenshots/invoice-print.png" width="700">
+
+The invoice can be printed directly for customers.
+
+The layout is optimized for **clear and professional billing records**.
 
 ---
 
@@ -116,43 +171,40 @@ Invoices can be printed or stored for future reference.
 
 ## 💊 Medicine Management
 
-The system provides a comprehensive medicine management module.
+The system provides a complete medicine management module.
 
 Capabilities include:
 
 * Add new medicines
-* Update medicine details
+* Edit medicine details
 * Delete medicines
 * Manage medicine categories
-* Store manufacturer details
-* Track batch numbers
-* Maintain expiry dates
-* Track medicine price and GST
-* Manage stock quantities
-
-This ensures the pharmacy inventory remains **organized and up-to-date**.
+* Track manufacturers
+* Maintain batch numbers
+* Monitor expiry dates
+* Track GST percentage
+* Manage medicine pricing
+* Maintain stock quantities
 
 ---
 
 ## 📦 Inventory Management
 
-The inventory module automatically tracks stock levels.
+The inventory system automatically tracks stock levels.
 
 Features include:
 
 * Real-time stock updates
 * Automatic stock deduction during billing
-* Low stock detection
+* Low stock alerts
 * Expiry monitoring
-* Inventory visibility
-
-This helps pharmacy staff avoid stock shortages and manage medicines efficiently.
+* Prevent negative stock
 
 ---
 
-## 🧾 Billing System
+## 🧾 Smart Billing System
 
-The billing system simplifies the medicine sales process.
+The billing module simplifies pharmacy sales operations.
 
 Capabilities include:
 
@@ -161,26 +213,20 @@ Capabilities include:
 * Automatic GST calculation
 * Patient information support
 * Invoice generation
-* Bill history storage
-
-The system automatically calculates:
-
-* Item subtotal
-* GST amount
-* Total bill amount
+* Bill history tracking
 
 ---
 
 ## 👥 Staff Management
 
-Pharmacy owners can manage staff access within the system.
+Pharmacy owners can manage staff within the system.
 
 Features include:
 
 * Add staff members
 * Assign roles
-* Invite staff to join the pharmacy
-* Manage staff permissions
+* Staff login authentication
+* Permission-based system access
 
 Supported roles:
 
@@ -188,20 +234,18 @@ Supported roles:
 * Pharmacist
 * Staff
 
-This ensures secure and organized pharmacy operations.
-
 ---
 
 ## 🏥 Multi-Pharmacy Support
 
-The system supports **multi-tenant pharmacy architecture**, allowing multiple pharmacies to operate independently within the same system.
+The system supports **multi-tenant pharmacy architecture**.
 
-Each pharmacy has:
+Each pharmacy operates independently with:
 
 * Separate medicine inventory
 * Independent billing records
-* Dedicated staff
-* Custom pharmacy settings
+* Dedicated staff accounts
+* Custom pharmacy configuration
 
 ---
 
@@ -212,65 +256,52 @@ The system allows configuration of pharmacy information including:
 * Pharmacy name
 * Address
 * Contact information
-* Billing information
 * GST configuration
+* Billing information
 
-These settings automatically appear in generated invoices.
+These details automatically appear on invoices.
 
 ---
 
 # 🔄 Application Working Flow
 
-### 1️⃣ User Login
+### 1️⃣ User Authentication
 
-Pharmacy staff securely log into the system.
-
-After authentication, the system redirects users to the dashboard.
+Users log into the system using the secure login interface.
 
 ---
 
-### 2️⃣ Dashboard Overview
+### 2️⃣ Dashboard Access
 
-The dashboard provides an overview of:
-
-* Inventory statistics
-* Billing activity
-* Alerts and notifications
+After login, users are redirected to the dashboard where pharmacy activity can be monitored.
 
 ---
 
-### 3️⃣ Medicine Inventory Management
+### 3️⃣ Medicine Management
 
-Staff can manage medicines by:
-
-* Adding new medicines
-* Updating stock
-* Editing medicine details
-* Monitoring expiry dates
-
-All medicine data is stored in the database.
+Staff can add, edit, and manage medicines in the inventory.
 
 ---
 
 ### 4️⃣ Billing Process
 
-During a sale:
+When a customer purchases medicines:
 
 1. Staff opens the **New Billing page**
-2. Medicines are searched using **autocomplete search**
-3. Staff selects medicines and enters quantity
-4. The system calculates price and GST automatically
-5. The bill is stored in the database
+2. Medicines are searched using **autocomplete**
+3. Quantity is entered
+4. The system calculates GST and totals automatically
+5. The bill is saved in the database
 
 ---
 
 ### 5️⃣ Invoice Generation
 
-Once billing is completed, the system generates a printable invoice containing:
+The system generates a professional invoice including:
 
 * Pharmacy details
-* Customer information
-* Purchased medicines
+* Customer details
+* Medicine list
 * GST breakdown
 * Grand total
 
@@ -281,19 +312,19 @@ Once billing is completed, the system generates a printable invoice containing:
 After billing:
 
 * Medicine stock is automatically reduced
-* Inventory data is updated
-* Low stock alerts are triggered
+* Inventory records are updated
+* Low stock alerts are triggered if necessary
 
 ---
 
 # 🧠 System Architecture
 
-The project follows the **MVC (Model – View – Controller)** architecture.
+The project follows **MVC (Model – View – Controller)** architecture.
 
 ```
 Client Browser
        ↓
-Thymeleaf Templates (View)
+HTML / Thymeleaf Templates (View)
        ↓
 Spring Boot Controllers
        ↓
@@ -304,12 +335,12 @@ Repository Layer
 MySQL Database
 ```
 
-### Benefits
+### Architecture Benefits
 
 * Clean separation of concerns
-* Maintainable code structure
-* Scalable system design
-* Easy feature expansion
+* Maintainable codebase
+* Modular structure
+* Easy scalability
 
 ---
 
@@ -353,18 +384,11 @@ MySQL Database
 
 ---
 
-# 🔮 Future Improvements
+# 💼 Commercial Availability
 
-Planned enhancements include:
+This software is available for **commercial licensing and deployment**.
 
-* Barcode scanner integration
-* Advanced sales reports
-* Expiry alerts
-* Low stock notifications
-* PDF invoice export
-* REST API support
-* Android mobile application
-* Cloud deployment
+If you are interested in purchasing or deploying this pharmacy system, please contact the author.
 
 ---
 
@@ -382,14 +406,6 @@ https://github.com/rezaul-code
 
 🔗 LinkedIn
 https://linkedin.com/in/rezaul-khan
-
----
-
-# 💼 Commercial Availability
-
-This system is available for **commercial licensing and custom deployment**.
-
-If you are interested in purchasing or deploying the software for your pharmacy business, please contact the author.
 
 ---
 
