@@ -1,486 +1,367 @@
-# PharmacyManagement_details
-
-# Code Repo is Private due to copyright 
-
 # 💊 Pharmacy Management System
-
-A **modern web-based Pharmacy Management System** built using **Java, Servlet, JSP, and MySQL** to digitally manage pharmacy operations such as **medicine inventory, billing, and stock tracking**.
-
-The system replaces traditional manual registers with an **efficient digital workflow**, helping pharmacy staff manage medicines, track stock levels, and generate bills quickly and accurately.
-
-> ⚠️ This project is developed for **learning, demonstration, and academic purposes**.
-
----
-
-# 🚀 Features
-
-### 💊 Medicine Management
-
-* Add new medicines
-* Update medicine details
-* Delete medicines
-* Manage medicine categories
-* Track manufacturer and batch details
-
-### 📦 Inventory Management
-
-* Real-time stock tracking
-* Low stock detection
-* Expiry date monitoring
-* Prevent negative stock during billing
-
-### 🧾 Billing System
-
-* Generate pharmacy bills
-* Automatic GST calculation
-* Patient information support
-* Bill history tracking
-* Invoice print support
-
-### 📊 Dashboard
-
-* Total medicines count
-* Low stock alerts
-* Total bills
-* Daily sales overview
-
-### 🔍 Search & Filtering
-
-* Search medicines instantly
-* View detailed medicine inventory
-* Manage stock efficiently
-
-### 🔐 Authentication
-
-* Secure login system
-* Session management
-* Admin / Staff access
-
----
-
-# 📸 Application Screenshots
-
-## Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-Displays pharmacy overview including **medicine inventory, low stock alerts, and daily sales statistics**.
-
----
-
-## Medicine Inventory
+![Billing](screenshots/new-bill.png)
 
 ![Inventory](screenshots/inventory.png)
 
-View all medicines with details such as:
+---
 
-* Medicine Name
-* Type
-* Manufacturer
-* Batch Number
-* Expiry Date
-* Price
-* GST
-* Stock Quantity
+## ⚠️ Important Notice
+
+This repository is a **public showcase repository** created to demonstrate the **features, architecture, and working flow** of the Pharmacy Management System.
+
+The **actual implementation repository containing the complete source code is private** to protect the original implementation and intellectual property.
+
+If you are interested in using or purchasing the system, you can contact the author.
+
+This repository contains:
+
+* Feature overview
+* System architecture
+* Application screenshots
+* Working flow explanation
+* Technical stack details
 
 ---
 
-## Add Medicine
+# 📌 Project Overview
 
-![Add Medicine](screenshots/add-medicine.png)
+The **Pharmacy Management System** is a modern **digital solution for pharmacy operations** designed to replace traditional manual registers and spreadsheets.
 
-Add new medicines with:
+The system enables pharmacies to efficiently manage:
 
-* Manufacturer
-* Batch Number
-* Expiry Date
-* Unit Price
-* GST Percentage
-* Stock Quantity
+* Medicine inventory
+* Billing and invoice generation
+* Stock monitoring
+* Staff management
+* Pharmacy configuration
+
+The application is built using **Java, Spring Boot, HTML, CSS, JavaScript, and MySQL**, following a **clean MVC architecture** to ensure scalability, performance, and maintainability.
+
+It is designed to be **simple for pharmacy staff to use while maintaining powerful backend capabilities**.
 
 ---
 
-## New Billing
+# 🚀 Core Features
 
-![Billing](screenshots/new-bill.png)
+## 💊 Medicine Management
 
-Generate medicine bills with:
+The system provides a complete module for managing pharmacy medicines.
 
+Capabilities include:
+
+* Add new medicines
+* Edit existing medicine details
+* Delete medicines
+* Manage medicine categories
+* Store manufacturer details
+* Track batch numbers
+* Maintain expiry dates
+* Maintain GST percentage
+* Track medicine pricing
+* Manage medicine stock quantity
+
+Each medicine record includes:
+
+* Medicine name
+* Medicine type
+* Manufacturer
+* Batch number
+* Expiry date
+* Price per unit
+* GST percentage
+* Stock quantity
+
+---
+
+## 📦 Inventory Management
+
+The inventory system automatically tracks medicine stock levels and ensures accurate availability.
+
+Key capabilities:
+
+* Real-time stock updates
+* Automatic stock deduction during billing
+* Low stock monitoring
+* Expiry date tracking
+* Inventory visibility
+* Prevent negative stock during billing
+
+This ensures pharmacy staff always know the **exact availability of medicines**.
+
+---
+
+## 🧾 Smart Billing System
+
+The billing module enables pharmacies to quickly generate medicine invoices for customers.
+
+Features include:
+
+* Create new pharmacy bills
+* Add multiple medicines in a single bill
+* Automatic GST calculation
+* Quantity-based pricing
+* Patient information support
+* Bill history storage
+* Invoice generation
+* Print-friendly invoice format
+
+The system automatically calculates:
+
+* Item subtotal
+* GST amount
+* Total bill value
+
+This reduces manual calculations and speeds up the checkout process.
+
+---
+
+## 👥 Staff Management
+
+The system includes a **staff management module** to help pharmacy owners control access to the system.
+
+Capabilities include:
+
+* Add staff members
+* Assign staff roles
+* Invite staff to join the pharmacy
+* Staff login authentication
+* Manage staff permissions
+
+Supported roles include:
+
+* Owner
+* Pharmacist
+* Staff
+
+This ensures secure and organized operations.
+
+---
+
+## 🏥 Multi-Pharmacy Support
+
+The application supports **multi-pharmacy architecture**, allowing multiple pharmacies to operate independently within the same platform.
+
+Features include:
+
+* Pharmacy registration
+* Separate pharmacy environments
+* Independent medicine inventories
+* Separate billing records
+* Dedicated pharmacy configuration
+
+Each pharmacy manages its **own medicines, staff, and billing data**.
+
+---
+
+## ⚙️ Pharmacy Settings
+
+The system includes a configuration module where pharmacies can manage:
+
+* Pharmacy name
+* Address
+* Contact information
+* Billing information
+* GST configuration
+
+These settings automatically appear on generated invoices.
+
+---
+
+## 📊 Dashboard
+
+The dashboard provides a quick overview of pharmacy operations.
+
+Information displayed includes:
+
+* Total medicines available
+* Low stock alerts
+* Total generated bills
+* Recent billing activities
+* Inventory overview
+
+This allows pharmacy staff to **monitor the system instantly after login**.
+
+---
+
+## 🔍 Smart Medicine Search
+
+The system includes a fast search feature to improve billing speed.
+
+Capabilities include:
+
+* Instant medicine search
+* Autocomplete suggestions
+* Quick inventory lookup
+* Fast medicine selection during billing
+
+This significantly **reduces billing time and improves efficiency**.
+
+---
+
+# 🔄 Application Working Flow
+
+The system workflow is designed to match real pharmacy operations.
+
+### 1️⃣ User Login
+
+Pharmacy staff log into the system using secure authentication.
+
+After login, the user session is created and the user is redirected to the dashboard.
+
+---
+
+### 2️⃣ Dashboard Overview
+
+The dashboard displays important information including:
+
+* Inventory overview
+* Medicine count
+* Billing statistics
+* Alerts and notifications
+
+---
+
+### 3️⃣ Medicine Inventory Management
+
+Staff manage medicines by:
+
+* Adding new medicines
+* Updating stock levels
+* Editing medicine details
+* Tracking expiry dates
+
+All changes are stored in the database and reflected across the system.
+
+---
+
+### 4️⃣ Billing Process
+
+When a customer purchases medicines:
+
+1. Staff opens the **New Billing interface**
+
+2. Medicines are searched using **autocomplete search**
+
+3. Staff selects medicines and enters quantity
+
+4. The system automatically calculates:
+
+   * Item price
+   * GST amount
+   * Bill total
+
+5. The bill is saved in the database.
+
+---
+
+### 5️⃣ Invoice Generation
+
+Once the bill is completed, the system generates a **clean printable invoice** containing:
+
+* Pharmacy information
 * Patient details
-* Medicine selection
-* Quantity calculation
-* GST calculation
-* Automatic bill summary
-
----
-
-## Invoice
-
-![Invoice](screenshots/invoice.png)
-
-Generate a **clean printable invoice** including:
-
-* Pharmacy details
-* Patient information
 * Medicine list
 * GST breakdown
 * Grand total
 
+Invoices can be printed or stored for record keeping.
+
 ---
 
-# 🧠 System Overview
+### 6️⃣ Automatic Inventory Update
 
-The system allows pharmacy staff to:
+After a bill is generated:
 
-* Maintain medicine inventory
-* Track stock availability
-* Process medicine sales
-* Generate invoices
-* Store billing records
+* Medicine stock is automatically reduced
+* Inventory data is updated
+* Low stock alerts are triggered if needed
 
-It is designed to be **simple, fast, and easy to use**, making it ideal for **small pharmacies and academic demonstrations**.
+This ensures the inventory always remains accurate.
+
+---
+
+# 🧠 System Architecture
+
+The project follows the **MVC (Model – View – Controller)** architecture.
+
+```
+Client Browser
+       ↓
+Thymeleaf Templates (View)
+       ↓
+Spring Boot Controllers
+       ↓
+Service Layer
+       ↓
+Repository Layer (JPA)
+       ↓
+MySQL Database
+```
+
+### Architecture Benefits
+
+* Clean separation of concerns
+* Maintainable codebase
+* Modular structure
+* Easy scalability
 
 ---
 
 # 🛠️ Technology Stack
 
-### Backend
+## Backend
 
 * Java
 * Spring Boot
-* JPA
-* JDBC
+* Spring MVC
+* Spring Data JPA
 
-### Frontend
+## Frontend
 
 * HTML
 * CSS
 * JavaScript
+* Thymeleaf
 
-### Database
+## Database
 
 * MySQL
 
-### Server
+## Build Tool
 
-* Apache Tomcat
+* Maven
 
-### Architecture
+## Server
 
-MVC (Model – View – Controller)
-
----
-
-# 🏗️ System Architecture
-
-```
-Client (Browser)
-        ↓
-JSP (View Layer)
-        ↓
-Servlet (Controller Layer)
-        ↓
-DAO / Service Layer
-        ↓
-MySQL Database
-```
-
-### Design Principles
-
-* Separation of concerns
-* Modular architecture
-* Maintainable codebase
-* Scalable structure
-
----
-
-# 📁 Project Structure
-
-```
-E:\PharmaManagement
-|   README.md
-|
-\---SpringBootApp
-    |   .classpath
-    |   .gitattributes
-    |   .gitignore
-    |   .project
-    |   mvnw
-    |   mvnw.cmd
-    |   pom.xml
-    |
-    +---.mvn
-    |   \---wrapper
-    |           maven-wrapper.properties
-    |
-    +---.settings
-    |       org.eclipse.core.resources.prefs
-    |       org.eclipse.jdt.core.prefs
-    |       org.eclipse.m2e.core.prefs
-    |
-    +---src
-    |   +---main
-    |   |   +---java
-    |   |   |   \---com
-    |   |   |       \---myspringboot
-    |   |   |           \---SpringBootApp
-    |   |   |               |   SpringBootAppApplication.java
-    |   |   |               |
-    |   |   |               +---config
-    |   |   |               |       AuthInterceptor.java
-    |   |   |               |       WebConfig.java
-    |   |   |               |
-    |   |   |               +---controller
-    |   |   |               |       BillingController.java
-    |   |   |               |       HelloController.java
-    |   |   |               |       LoginController.java
-    |   |   |               |       MedicineController.java
-    |   |   |               |       SignUpController.java
-    |   |   |               |
-    |   |   |               +---dto
-    |   |   |               |       BillingForm.java
-    |   |   |               |
-    |   |   |               +---model
-    |   |   |               |       Billing.java
-    |   |   |               |       BillingItem.java
-    |   |   |               |       BillingItemForm.java
-    |   |   |               |       Medicine.java
-    |   |   |               |       MedicineType.java
-    |   |   |               |       User.java
-    |   |   |               |
-    |   |   |               +---repo
-    |   |   |               |       BillingRepository.java
-    |   |   |               |       MedicineRepository.java
-    |   |   |               |       UserRepository.java
-    |   |   |               |
-    |   |   |               \---Service
-    |   |   |                       BillingService.java
-    |   |   |                       MedicineService.java
-    |   |   |
-    |   |   \---resources
-    |   |       |   application.properties
-    |   |       |
-    |   |       +---static
-    |   |       |   +---css
-    |   |       |   |       style.css
-    |   |       |   |
-    |   |       |   \---js
-    |   |       |           billing-autocomplete.js
-    |   |       |
-    |   |       \---templates
-    |   |           |   index.html
-    |   |           |
-    |   |           +---pages
-    |   |           |       add_medicine.html
-    |   |           |       billing_list.html
-    |   |           |       billing_new.html
-    |   |           |       billing_view.html
-    |   |           |       dashboard.html
-    |   |           |       med_edit.html
-    |   |           |       show_medicine.html
-    |   |           |
-    |   |           \---user_auth
-    |   |                   index.html
-    |   |                   user_login.html
-    |   |                   user_signup.html
-    |   |
-    |   \---test
-    |       \---java
-    |           \---com
-    |               \---myspringboot
-    |                   \---SpringBootApp
-    |                           SpringBootAppApplicationTests.java
-    |
-    \---target
-        +---classes
-        |   |   application.properties
-        |   |
-        |   +---com
-        |   |   \---myspringboot
-        |   |       \---SpringBootApp
-        |   |           |   SpringBootAppApplication.class
-        |   |           |
-        |   |           +---config
-        |   |           |       AuthInterceptor.class
-        |   |           |       WebConfig.class
-        |   |           |
-        |   |           +---controller
-        |   |           |       BillingController.class
-        |   |           |       HelloController.class
-        |   |           |       LoginController.class
-        |   |           |       MedicineController.class
-        |   |           |       SignUpController.class
-        |   |           |
-        |   |           +---dto
-        |   |           |       BillingForm.class
-        |   |           |
-        |   |           +---model
-        |   |           |       Billing$BillingStatus.class
-        |   |           |       Billing.class
-        |   |           |       BillingItem.class
-        |   |           |       BillingItemForm.class
-        |   |           |       Medicine.class
-        |   |           |       MedicineType.class
-        |   |           |       User.class
-        |   |           |
-        |   |           +---repo
-        |   |           |       BillingRepository.class
-        |   |           |       MedicineRepository.class
-        |   |           |       UserRepository.class
-        |   |           |
-        |   |           \---Service
-        |   |                   BillingService.class
-        |   |                   MedicineService.class
-        |   |
-        |   +---META-INF
-        |   |   |   MANIFEST.MF
-        |   |   |
-        |   |   \---maven
-        |   |       \---com.myspringboot
-        |   |           \---SpringBootApp
-        |   |                   pom.properties
-        |   |                   pom.xml
-        |   |
-        |   +---static
-        |   |   +---css
-        |   |   |       style.css
-        |   |   |
-        |   |   \---js
-        |   |           billing-autocomplete.js
-        |   |
-        |   \---templates
-        |       |   index.html
-        |       |
-        |       +---pages
-        |       |       add_medicine.html
-        |       |       billing_list.html
-        |       |       billing_new.html
-        |       |       billing_view.html
-        |       |       dashboard.html
-        |       |       med_edit.html
-        |       |       show_medicine.html
-        |       |
-        |       \---user_auth
-        |               index.html
-        |               user_login.html
-        |               user_signup.html
-        |
-        +---generated-sources
-        |   \---annotations
-        +---generated-test-sources
-        |   \---test-annotations
-        +---maven-status
-        |   \---maven-compiler-plugin
-        |       +---compile
-        |       |   \---default-compile
-        |       |           createdFiles.lst
-        |       |           inputFiles.lst
-        |       |
-        |       \---testCompile
-        |           \---default-testCompile
-        |                   createdFiles.lst
-        |                   inputFiles.lst
-        |
-        +---surefire-reports
-        |       2026-03-05T23-32-50_562.dumpstream
-        |       2026-03-05T23-38-02_507.dumpstream
-        |       2026-03-05T23-47-08_673.dumpstream
-        |       com.myspringboot.SpringBootApp.SpringBootAppApplicationTests.txt
-        |       TEST-com.myspringboot.SpringBootApp.SpringBootAppApplicationTests.xml
-        |
-        \---test-classes
-            \---com
-                \---myspringboot
-                    \---SpringBootApp
-                            SpringBootAppApplicationTests.class
-
-```
-
----
-
-# ⚙️ Installation Guide
-
-### 1️⃣ Clone Repository
-
-```
-git clone https://github.com/rezaul-code/pharmacy-management-system.git
-```
-
----
-
-### 2️⃣ Import Project
-
-Open the project in:
-
-* IntelliJ IDEA
-* Eclipse
-* VS Code (with Java extensions)
-
----
-
-### 3️⃣ Setup Database
-
-Create a MySQL database:
-
-```
-CREATE DATABASE pharmacy_db;
-```
-
-Import the provided SQL file.
-
----
-
-### 4️⃣ Configure Database Connection
-
-Update:
-
-```
-DBConnection.java
-```
-
-```
-jdbc:mysql://localhost:3306/pharmacy_db
-username: root
-password: yourpassword
-```
-
----
-
-### 5️⃣ Run Project
-
-Deploy on:
-
-```
-Apache Tomcat Server
-```
-
-Access the application:
-
-```
-http://localhost:8080/pharmacy-management-system
-```
+* Embedded Apache Tomcat
 
 ---
 
 # 🔐 Security Features
 
 * Session-based authentication
+* Role-based access control
+* Secure login system
 * Input validation
-* Secure logout
-* Controlled admin access
+* Controlled staff access
 
 ---
 
 # 🔮 Future Improvements
 
+Planned enhancements include:
+
+* Barcode scanner integration
+* Advanced sales reports
 * Expiry alerts
 * Low stock notifications
-* Role-based access control
-* Export invoices to PDF
+* PDF invoice export
 * REST API integration
-* Spring Boot migration
+* Android mobile application
 * Cloud deployment
-* Android application version
 
 ---
 
@@ -501,12 +382,14 @@ https://linkedin.com/in/rezaul-khan
 
 ---
 
-# 📜 License
+# 💼 Commercial Availability
 
-This project is licensed for **educational and demonstration purposes**.
+This software is available for **commercial licensing**.
+
+If you are interested in purchasing the system or integrating it into your pharmacy business, please contact the author.
 
 ---
 
 # ⭐ Support
 
-If you like this project, please **star the repository** ⭐ on GitHub.
+If you like the project concept, please **star this repository** ⭐
