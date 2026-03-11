@@ -11,6 +11,7 @@ It helps pharmacies efficiently manage:
 * Stock monitoring
 * Staff management
 * Pharmacy configuration
+* Sales analytics and business insights
 
 The system is built using **Java, Spring Boot, HTML, CSS, JavaScript, and MySQL**, following a **clean MVC architecture** that ensures scalability and maintainability.
 
@@ -71,6 +72,7 @@ The admin dashboard provides a complete overview of the pharmacy system includin
 * Total medicines
 * Inventory overview
 * Billing statistics
+* Sales analytics
 * System management tools
 
 ---
@@ -97,11 +99,12 @@ Pharmacy staff can add new medicines with details such as:
 * Manufacturer
 * Batch number
 * Expiry date
-* Unit price
+* Purchase price
+* Selling price
 * GST percentage
 * Available stock
 
-This ensures accurate medicine tracking.
+The system automatically generates a **unique medicine code** for each medicine.
 
 ---
 
@@ -113,13 +116,16 @@ The inventory page shows all medicines stored in the pharmacy database.
 
 Each medicine record includes:
 
-* Medicine name
+* Medicine Code
+* Medicine Name
 * Manufacturer
-* Batch number
-* Expiry date
-* Price
-* GST
-* Available stock
+* Batch Number
+* Expiry Date
+* Purchase Price
+* Selling Price
+* Profit Margin
+* GST Percentage
+* Available Stock
 
 This helps staff monitor stock levels and medicine availability.
 
@@ -138,8 +144,7 @@ Features include:
 * Quantity-based billing
 * Automatic GST calculation
 * Real-time bill total
-
-This helps pharmacies generate bills quickly and accurately.
+* Instant invoice generation
 
 ---
 
@@ -167,6 +172,24 @@ The layout is optimized for **clear and professional billing records**.
 
 ---
 
+# 📊 Sales Analytics
+
+<img src="screenshots/sales-analytics.png" width="700">
+
+The **Sales Analytics module** provides insights into pharmacy business performance.
+
+Features include:
+
+* Top selling medicines
+* Revenue analytics
+* Profit tracking
+* Monthly sales trends
+* Inventory valuation
+
+This helps pharmacy owners understand sales performance and profitability.
+
+---
+
 # 🚀 Core Features
 
 ## 💊 Medicine Management
@@ -178,12 +201,13 @@ Capabilities include:
 * Add new medicines
 * Edit medicine details
 * Delete medicines
-* Manage medicine categories
+* Automatic **Medicine Code Generation**
 * Track manufacturers
 * Maintain batch numbers
 * Monitor expiry dates
 * Track GST percentage
-* Manage medicine pricing
+* Manage purchase and selling prices
+* Profit margin tracking
 * Maintain stock quantities
 
 ---
@@ -199,6 +223,7 @@ Features include:
 * Low stock alerts
 * Expiry monitoring
 * Prevent negative stock
+* Inventory value calculation
 
 ---
 
@@ -214,6 +239,21 @@ Capabilities include:
 * Patient information support
 * Invoice generation
 * Bill history tracking
+* Printable invoices
+
+---
+
+## 📊 Sales Analytics
+
+The analytics module helps pharmacy owners monitor business performance.
+
+Capabilities include:
+
+* Top selling medicines tracking
+* Revenue analytics
+* Profit calculation
+* Monthly sales trend charts
+* Inventory value insights
 
 ---
 
@@ -265,55 +305,41 @@ These details automatically appear on invoices.
 
 # 🔄 Application Working Flow
 
-### 1️⃣ User Authentication
+The following diagram shows the **happy flow of the system**.
 
-Users log into the system using the secure login interface.
+```
+User Login
+     ↓
+Dashboard Overview
+     ↓
+Medicine Inventory Management
+     ↓
+Add / Update Medicines
+     ↓
+Inventory Ready for Sale
+     ↓
+Create New Bill
+     ↓
+Select Medicines + Quantity
+     ↓
+Automatic GST & Price Calculation
+     ↓
+Save Bill
+     ↓
+Invoice Generated
+     ↓
+Inventory Stock Updated
+     ↓
+Sales Data Stored
+     ↓
+Sales Analytics & Reports Generated
+```
 
----
+This flow represents the **core pharmacy business lifecycle**:
 
-### 2️⃣ Dashboard Access
-
-After login, users are redirected to the dashboard where pharmacy activity can be monitored.
-
----
-
-### 3️⃣ Medicine Management
-
-Staff can add, edit, and manage medicines in the inventory.
-
----
-
-### 4️⃣ Billing Process
-
-When a customer purchases medicines:
-
-1. Staff opens the **New Billing page**
-2. Medicines are searched using **autocomplete**
-3. Quantity is entered
-4. The system calculates GST and totals automatically
-5. The bill is saved in the database
-
----
-
-### 5️⃣ Invoice Generation
-
-The system generates a professional invoice including:
-
-* Pharmacy details
-* Customer details
-* Medicine list
-* GST breakdown
-* Grand total
-
----
-
-### 6️⃣ Inventory Update
-
-After billing:
-
-* Medicine stock is automatically reduced
-* Inventory records are updated
-* Low stock alerts are triggered if necessary
+```
+Inventory → Sales → Analytics
+```
 
 ---
 
